@@ -5,6 +5,26 @@ class WidgetCidade extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Salvador');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cadastro de Cidade'),
+      ),
+      body: Form(
+          child: Column(
+        children: [
+          TextFormField(
+              decoration: InputDecoration(
+                  LabelText: 'Nome', hintText: 'Informe o nome da sua cidade')),
+          TextFormField(
+              decoration: InputDecoration(
+                  LabelText: 'Sigla',
+                  hintText: 'Informe a sigla da sua cidade')),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('salvar'),
+          ),
+        ],
+      )),
+    );
   }
 }

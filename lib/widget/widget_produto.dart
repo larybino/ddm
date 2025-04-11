@@ -5,6 +5,27 @@ class WidgetProduto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Produto');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cadastro de Produto'),
+      ),
+      body: Form(
+          child: Column(
+        children: [
+          TextFormField(
+              decoration: InputDecoration(
+                  LabelText: 'Tipo',
+                  hintText: 'Informe o tipo do seu produto')),
+          TextFormField(
+              decoration: InputDecoration(
+                  LabelText: 'produto',
+                  hintText: 'Informe qual é o seu produto')),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('salvar'),
+          ),
+        ],
+      )),
+    );
   }
 }

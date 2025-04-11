@@ -5,6 +5,25 @@ class WidgetPessoa extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Pessoa');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cadastro de Pessoa'),
+      ),
+      body: Form(
+          child: Column(
+        children: [
+          TextFormField(
+              decoration: InputDecoration(
+                  LabelText: 'Nome', 
+                  hintText: 'Informe o nome'
+            )
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('salvar'),
+          ),
+        ],
+      )),
+    );
   }
 }

@@ -5,6 +5,22 @@ class WidgetCategoria extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Categoria');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cadastro de Categoria'),
+      ),
+      body: Form(
+          child: Column(
+        children: [
+          TextFormField(
+              decoration: InputDecoration(
+                  LabelText: 'Tipo', hintText: 'Informe o tipo de categoria')),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('salvar'),
+          ),
+        ],
+      )),
+    );
   }
 }
