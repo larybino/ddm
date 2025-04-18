@@ -7,14 +7,14 @@ class WidgetCategoria extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastro de Categoria'),
+        title: Text('Cadastro de Categoria'), backgroundColor: Color.fromARGB(255, 243, 33, 219),
       ),
       body: Form(
           child: Column(
         children: [
           TextFormField(
               decoration: InputDecoration(
-                  LabelText: 'Tipo', hintText: 'Informe o tipo de categoria')),
+                  labelText: 'Tipo', hintText: 'Informe o tipo de categoria')),
           ElevatedButton(
             onPressed: () {},
             child: Text('salvar'),

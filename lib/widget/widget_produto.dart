@@ -7,18 +7,18 @@ class WidgetProduto extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastro de Produto'),
+        title: Text('Cadastro de Produto'), backgroundColor: Color.fromARGB(255, 243, 33, 219),
       ),
       body: Form(
           child: Column(
         children: [
           TextFormField(
               decoration: InputDecoration(
-                  LabelText: 'Tipo',
+                  labelText: 'Tipo',
                   hintText: 'Informe o tipo do seu produto')),
           TextFormField(
               decoration: InputDecoration(
-                  LabelText: 'produto',
+                  labelText: 'produto',
                   hintText: 'Informe qual é o seu produto')),
           ElevatedButton(
             onPressed: () {},

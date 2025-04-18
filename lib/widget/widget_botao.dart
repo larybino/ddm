@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class WidgetBotao estends StateLessWidget{
+class WidgetBotao extends StatelessWidget{
   final String rota;
   final String rotulo;
-  WidgetBotao({required this.rota, required this rotulo})
+  WidgetBotao({required this.rota, required this.rotulo});
+
   @override
   Widget build(BuildContext context){
     return ElevatedButton(

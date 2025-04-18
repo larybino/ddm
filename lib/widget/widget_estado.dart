@@ -7,18 +7,18 @@ class WidgetEstado extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastro de Estado'),
+        title: Text('Cadastro de Estado'),backgroundColor: Color.fromARGB(255, 243, 33, 219),
       ),
       body: Form(
           child: Column(
         children: [
           TextFormField(
               decoration: InputDecoration(
-                  LabelText: 'Nome', 
+                  labelText: 'Nome', 
                   hintText: 'Informe o nome do seu estado')),
           TextFormField(
               decoration: InputDecoration(
-                  LabelText: 'Sigla',
+                  labelText: 'Sigla',
                   hintText: 'Informe a sigla do seu estado')),
           ElevatedButton(
             onPressed: () {},
